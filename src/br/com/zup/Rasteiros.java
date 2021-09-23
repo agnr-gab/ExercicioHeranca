@@ -7,4 +7,16 @@ public class Rasteiros extends Inimigos {
         super(nome, vida);
         this.danoEspinhos = danoEspinhos;
     }
+
+    public double getDanoEspinhos() {
+        return danoEspinhos;
+    }
+
+    public void setDanoEspinhos(double danoEspinhos) {
+        this.danoEspinhos = danoEspinhos;
+    }
+    public void aplicarDano (){
+        double aplicaDano = this.getDanoEspinhos();
+        this.setDanoEspinhos(danoEspinhos);
+    }
 }
