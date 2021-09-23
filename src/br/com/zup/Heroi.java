@@ -30,8 +30,8 @@ public class Heroi {
         this.setNome(nome);
     }
 
-    public void receberDano() {
-        double dano = this.getVida() - dano;
+    public void receberDano(double dano) {
+        double recebeDano = this.getVida() - dano;
         this.setVida(dano);
     }
 
